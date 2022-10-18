@@ -1,0 +1,7 @@
+<digit> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+<am-pm> ::= "am" | "pm"
+<hour> ::= <h-tens> <digit> | <digit>
+<minute> ::= <m-tens> <digit>
+<h-tens> ::= "0" | "1" | "2"
+<m-tens> ::= "0" | "1" | "2" | "3" | "4" | "5"
+<time> ::= <hour> ":" <minute> | <hour> ":" <minute><am-pm> | <hour><am-pm>
