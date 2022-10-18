@@ -1,0 +1,7 @@
+digit = { '0'..'9' }
+ampm = { "am" | "pm" }
+h_tens = { '0'..'2' }
+m_tens = { '0'..'5' }
+hour = { h_tens ~ digit | digit }
+minute = { m_tens ~ digit }
+time = { hour ~ ":" ~ minute | hour ~ ":" ~ minute ~ ampm | hour ~ ampm }
